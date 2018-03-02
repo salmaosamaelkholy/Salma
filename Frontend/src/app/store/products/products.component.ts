@@ -40,7 +40,7 @@ import {Router} from "@angular/router";
     color: white;
 }
 .btn {
-    background-color: #FFE4E1;
+    background-color: black;
     border: none;
     color: white;
     padding: 12px 16px;
@@ -57,7 +57,6 @@ import {Router} from "@angular/router";
 
 <body>
 
-<button type="button" style="width:100%" class="btn btn-primary" (click)="addProduct()">Add product</button>
   
 
 
@@ -79,10 +78,11 @@ import {Router} from "@angular/router";
   <td>{{item.sellerName}}</td>
   <td>{{item.createdAt}}</td>
   <td>{{item.updatedAt}}</td>
-  <td><button type="button" class="btn btn-primary" (click)="editProduct(item._id)">Edit</button></td>
-  <td><button type="button" class="btn btn-primary" (click)="deleteProduct(item._id)">-</button></td>
+  <td><button type="button" class="btn btn-default" (click)="editProduct(item._id)">Edit</button></td>
+  <td><button type="button" class="btn btn-default" (click)="deleteProduct(item._id)">-</button></td>
   </tr>
 </table>
+<button type="button" style="width:10" class="btn btn-default" (click)="addProduct()">Add product</button>
 
 
 </body>
